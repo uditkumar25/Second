@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <parameter name ="browser" value ="firefox"/>
+   <parameter name ="browser" value ="chrome"/>
+  <test thread-count="5" name="Test">
+ 
+  <groups>
+  <run>
+  <include name ="Run"/>
+  </run>
+  </groups>
+    <classes>
+    <!--   <class name="TestCases.LoginapplicationTC"/>-->
+      <class name ="TestCases.Testnj"/>
+      <class name ="TestCases.Browser"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name ="Test2">
+
+  <classes>
+  <class name ="TestCases.Browser"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
